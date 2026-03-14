@@ -17,7 +17,7 @@
         <header class="absolute inset-x-0 top-0 z-50">
 
             {{-- Navbar/Navigation --}}
-            <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+            <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8 sticky top-0 absolute">
                 {{-- Logo --}}
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1.5 p-1.5">
@@ -36,12 +36,48 @@
                         </svg>
                     </button>
                 </div>
-                {{-- Navigation links --}}
-                <div class="hidden lg:flex lg:gap-x-12">
-                    <a href="#" class="text-sm/6 font-semibold text-white">About</a>
-                    <a href="#" class="text-sm/6 font-semibold text-white">Divisi</a>
-                    <a href="#" class="text-sm/6 font-semibold text-white">Proker</a>
-                    <a href="#" class="text-sm/6 font-semibold text-white">Contact</a>
+                {{-- Dektop Navigation links --}}
+                <div class="hidden lg:flex lg:gap-x-12 font-semibold text-white">
+                    <ul class="menu md:menu-horizontal gap-2 p-0 text-base max-md:mt-2">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        {{-- dropdown links divisi --}}
+                        <li
+                            class="dropdown relative inline-flex [--auto-close:inside] [--offset:9] [--placement:bottom-end]">
+                            <button id="dropdown-nav" type="button"
+                                class="dropdown-toggle dropdown-open:bg-base-content/10 dropdown-open:text-base-content"
+                                aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                                Divisi
+                                <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
+                            </button>
+                            <ul class="dropdown-menu  rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10  dropdown-open:opacity-100 hidden"
+                                role="menu" aria-orientation="vertical" aria-labelledby="dropdown-nav">
+                                <li><a class="dropdown-item" href="#">Badan Pengurus Harian</a></li>
+                                <li><a class="dropdown-item" href="#">Rekrutmen Sumber Daya Manusia</a></li>
+                                <li><a class="dropdown-item" href="#">Pendidikan</a></li>
+                                <li><a class="dropdown-item" href="#">Penelitian dan Pengembangan</a></li>
+                                <li><a class="dropdown-item" href="#">Komunikasi Dan Informasi</a></li>
+                            </ul>
+                        </li>
+                        {{-- dropdown links proker --}}
+                        <li
+                            class="dropdown relative inline-flex [--auto-close:inside] [--offset:9] [--placement:bottom-end]">
+                            <button id="dropdown-nav" type="button"
+                                class="dropdown-toggle dropdown-open:bg-base-content/10 dropdown-open:text-base-content"
+                                aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                                Proker
+                                <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
+                            </button>
+                            <ul class="dropdown-menu  rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10  dropdown-open:opacity-100 hidden"
+                                role="menu" aria-orientation="vertical" aria-labelledby="dropdown-nav">
+                                <li><a class="dropdown-item" href="#">Kelas Coding</a></li>
+                                <li><a class="dropdown-item" href="#">Figma designs</a></li>
+                                <li><a class="dropdown-item" href="#">Workshops</a></li>
+                                <li><a class="dropdown-item" href="#">Open Recruitment</a></li>
+                                <li><a class="dropdown-item" href="#">Lomba</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
                 {{-- Login --}}
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -68,10 +104,12 @@
                                     <span class="sr-only">Close menu</span>
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
                                         data-slot="icon" aria-hidden="true" class="size-6">
-                                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round"
+                                            stroke-linejoin="round" />
                                     </svg>
                                 </button>
                             </div>
+                            {{-- Sidebar/Navigation link mobile --}}
                             <div class="mt-6 flow-root">
                                 <div class="-my-6 divide-y divide-white/10">
                                     {{-- Navigation links --}}
@@ -173,9 +211,8 @@
                                         Visi
                                     </dt>
                                     <dd class="mt-2 text-justify text-[16px] text-gray-700 dark:text-gray-300">Morbi
-                                        viverra dui
                                         Menjadikan HIMSI sebagai Himpunan yang kreatif, kompetitif, bertanggung jawab,
-                                        dan berwawasan global pada tahun 2025.</dd>
+                                        dan berwawasan global.</dd>
                                 </div>
                                 <div class="relative pl-16">
                                     <dt class="text-lg/7 font-semibold text-gray-900 dark:text-white">
@@ -191,9 +228,7 @@
                                         </div>
                                         Misi
                                     </dt>
-                                    <dd class="mt-2 text-justify text-[16px] text-gray-700 dark:text-gray-300">Sit quis
-                                        amet
-                                        Misi Kami
+                                    <dd class="mt-2 text-justify text-[16px] text-gray-700 dark:text-gray-300">
                                         Berkontribusi dalam bidang Sistem Informasi, membentuk mahasiswa berprestasi,
                                         menanamkan disiplin, solidaritas, serta menjalin kerja sama.
                                     </dd>
@@ -206,7 +241,7 @@
                     alt="Product screenshot"
                     class="w-3xs max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 not-dark:hidden sm:w-200 md:-ml-4 lg:-ml-0 dark:ring-white/10" /> --}}
                 <img src="https://himsiubsi.my.id/images/himsi.png" alt="Logo HIMSI"
-                    class="w-lg rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10 sm:mx-auto " />
+                    class="w-64 m-auto rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10 sm:mx-auto lg:w-lg" />
             </div>
         </div>
     </div>
@@ -244,7 +279,7 @@
                 <h2 class="text-base-content mb-4 text-2xl font-semibold md:text-3xl lg:text-4xl">
                     OUR TEAM
                 </h2>
-                <p class="text-base-content/80 text-xl">
+                <p class="text-base-content/80 text-lg font-medium text-pretty sm:text-xl/8">
                     Tim yang bergerak bersama untuk menciptakan program, kegiatan, dan dampak positif bagi Mahasiswa.
                 </p>
             </div>
@@ -278,42 +313,75 @@
     </div>
 
     {{-- Gallery --}}
-    <div class="py-8 sm:py-16 lg:py-24">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
-                <h2 class="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">
-                    <span class="relative z-1 font-bold">
-                        Explore our
-                        <span
-                            class="from-primary absolute start-0 bottom-1 -z-1 h-0.5 w-full bg-gradient-to-r to-transparent to-80%"
-                            aria-hidden="true"></span>
-                    </span>
-                    Gallery
-                </h2>
-                <p class="text-base-content/80 text-xl">
-                    Explore our gallery to learn more about our amazing products and their features.
-                </p>
-            </div>
-
-            <div class="grid gap-6 md:grid-cols-2">
-                <div>
-                    <img src="img/himsi.png" alt="team member"
-                        class="rounded-box aspect-square min-h-121.75 object-cover" />
+    <div class="py-24 sm:py-32">
+        <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
+            <h2 class="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">
+                <span class="relative z-1 font-bold">
+                    Explore our
+                    <span
+                        class="from-primary absolute start-0 bottom-1 -z-1 h-0.5 w-full bg-gradient-to-r to-transparent to-80%"
+                        aria-hidden="true"></span>
+                </span>
+                Gallery
+            </h2>
+            <p class="text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
+                Explore our gallery to learn more about our amazing products and their features.
+            </p>
+        </div>
+        <div id="horizontal-thumbnails" data-carousel='{ "loadingClasses": "opacity-0" }'
+            class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="carousel">
+                <div class="carousel-body h-3/4 opacity-0">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide">
+                        <div class="flex size-full justify-center">
+                            <img src="https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/article_banner/2025/4/10/FTc9ijmfTKKiBWnY0aGl66vXdVRV3NXCMvOqcVBU.webp"
+                                class="size-full object-cover" alt="mountain" />
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide">
+                        <div class="flex size-full justify-center">
+                            <img src="https://png.pngtree.com/background/20230528/original/pngtree-an-anime-anime-girl-wearing-a-hood-with-the-leaves-in-picture-image_2779557.jpg"
+                                class="size-full object-cover" alt="sand" />
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide">
+                        <div class="flex size-full justify-center">
+                            <img src="https://img.buzzfeed.com/buzzfeed-static/static/2024-06/1/15/asset/bb36008c8025/sub-buzz-8947-1717257505-1.jpg"
+                                class="size-full object-cover" alt="cloud" />
+                        </div>
+                    </div>
                 </div>
-
-                <div class="grid grid-cols-2 gap-6">
-                    <img src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/gallery/gallery-9.png"
-                        alt="Silhouettes on beach" class="rounded-box aspect-5/4 min-h-57.75 object-cover" />
-                    <img src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/gallery/gallery-10.png"
-                        alt="Snowy mountain peaks" class="rounded-box aspect-5/4 min-h-57.75 object-cover" />
-                    <img src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/gallery/gallery-11.png"
-                        alt="Rolling green hills" class="rounded-box aspect-5/4 min-h-57.75 object-cover" />
-                    <img src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/gallery/gallery-12.png"
-                        alt="Sunset landscape" class="rounded-box aspect-5/4 min-h-57.75 object-cover" />
+                <div
+                    class="carousel-pagination bg-base-100 absolute bottom-0 end-0 start-0 z-1 h-1/4 gap-2 flex justify-center gap-2 overflow-x-auto pt-2">
+                    <img src="https://customer-api-files.s3.ap-southeast-3.amazonaws.com/production/article_banner/2025/4/10/FTc9ijmfTKKiBWnY0aGl66vXdVRV3NXCMvOqcVBU.webp"
+                        class="carousel-pagination-item carousel-active:opacity-100 grow object-cover opacity-30"
+                        alt="mountain" />
+                    <img src="https://png.pngtree.com/background/20230528/original/pngtree-an-anime-anime-girl-wearing-a-hood-with-the-leaves-in-picture-image_2779557.jpg"
+                        class="carousel-pagination-item carousel-active:opacity-100 grow object-cover opacity-30"
+                        alt="sand" />
+                    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2024-06/1/15/asset/bb36008c8025/sub-buzz-8947-1717257505-1.jpg"
+                        class="carousel-pagination-item carousel-active:opacity-100 grow object-cover opacity-30"
+                        alt="cloud" />
                 </div>
+                <!-- Previous Slide -->
+                <button type="button"
+                    class="carousel-prev start-5 max-sm:start-3 carousel-disabled:opacity-50 size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow-base-300/20 shadow-sm">
+                    <span class="icon-[tabler--chevron-left] size-5 cursor-pointer"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <!-- Next Slide -->
+                <button type="button"
+                    class="carousel-next end-5 max-sm:end-3 carousel-disabled:opacity-50 size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow-base-300/20 shadow-sm">
+                    <span class="icon-[tabler--chevron-right] size-5"></span>
+                    <span class="sr-only">Next</span>
+                </button>
             </div>
         </div>
     </div>
+
 
     {{-- FAQ/Pertanyaan --}}
     <div class="py-8 sm:py-16 lg:py-24 text-lg ">
@@ -328,7 +396,7 @@
                             aria-hidden="true"></span>
                     </span>
                 </h2>
-                <p class="text-base-content/80 text-xl">
+                <p class="text-gray-400 text-lg font-medium text-pretty sm:text-xl/8">
                     Jawaban atas pertanyaan yang sering diajukan
                 </p>
             </div>
@@ -559,7 +627,7 @@
 
     {{-- Footer --}}
     <div class="px-6 py-4">
-        <footer class="footer">
+        <footer class="footer ">
             <div class="flex w-full flex-wrap items-center justify-between">
                 <div class="flex items-center gap-2 text-xl font-bold text-base-content">
                     <img width="24" height="24"src="img/himsi.png" alt="Himsi BSD Logo">
