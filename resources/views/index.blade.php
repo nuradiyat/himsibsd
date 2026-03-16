@@ -206,6 +206,7 @@
                         <a href="#"
                             class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Get
                             started</a>
+
                         <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span
                                 aria-hidden="true">→</span></a>
                     </div>
@@ -581,10 +582,73 @@
             <div class="relative mx-auto mb-12 w-fit sm:mb-16 lg:mb-24">
                 <h2 class="text-base-content text-2xl font-bold md:text-3xl lg:text-4xl">Contact Us</h2>
                 <span
-                    class="from-primary/40 to-primary/5 absolute start-0 top-9 h-1 w-full rounded-full bg-gradient-to-r"></span>
+                    class="from-primary/40 to-primary/5 absolute start-0 top-9 h-1 w-full rounded-full bg-gradient-to-r">
+                    </span>
             </div>
 
-            <div class="grid items-center gap-12 lg:grid-cols-2">
+            {{-- Pesan --}}
+            <div class="card-body grid gap-10 lg:grid-cols-7">
+                <!-- Form Section -->
+                <div class="lg:col-span-4">
+                    <h2 class="text-base-content mb-6 text-3xl font-semibold">Book a Table</h2>
+                    <form class="space-y-6" onsubmit="return false;">
+                        <div class="gap-6">
+                            <div class="w-full">
+                                <label class="label-text" for="username">Your Name</label>
+                                <div class="input input-lg">
+                                    <input type="text" class="grow" placeholder="Enter your name here..."
+                                        id="username" />
+                                    <span
+                                        class="icon-[tabler--user] text-base-content/80 size-5.5 my-auto ms-3 shrink-0"></span>
+                                </div>
+                            </div>
+                            <div class="w-full">
+                                <label class="label-text" for="userphone">Your Email</label>
+                                <div class="input input-lg">
+                                    <input type="email" class="grow" placeholder="Enter your email here..."
+                                        id="userphone" />
+                                    <span
+                                        class="icon-[tabler--phone] text-base-content/80 size-5.5 my-auto ms-3 shrink-0"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="label-text" for="usermessage">Message</label>
+                            <div class="textarea">
+                                <textarea class="grow resize-none" aria-label="Textarea" placeholder="Enter your message" id="usermessage"></textarea>
+                                <span
+                                    class="icon-[tabler--message-circle-2] text-base-content/80 mx-4 mt-2 size-6 shrink-0"></span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-gradient w-full">Book a Reservation</button>
+                    </form>
+                </div>
+                <!-- Contact Information -->
+                <div class="space-y-6 lg:col-span-3">
+                    {{-- Maps --}}
+                    <div class="border-base-content/20 rounded-box border p-6 text-center">
+                        <h3 class="text-base-content mb-4 text-xl font-semibold">Email/Phone</h3>
+                        <p class="text-base-content/80 mb-2 break-all">johndoe@gmail.com</p>
+                        <p class="text-base-content/80">+148 589 2001 2466</p>
+                    </div>
+                    {{-- Contact --}}
+                    <div class="border-base-content/20 rounded-box border p-6 text-center">
+                        <h3 class="text-base-content mb-4 text-xl font-semibold">Our Location</h3>
+                        <p class="text-base-content/80">Office 149,</p>
+                        <p class="text-base-content/80">450 South Brand Brooklyn</p>
+                        <p class="text-base-content/80">San Diego County,</p>
+                        <p class="text-base-content/80">CA 91905, USA</p>
+                    </div>
+                    {{-- c --}}
+                    <p class="text-base-content text-center font-medium">
+                        Opening Recrutment
+                        <span class="text-primary">9AM - 11PM</span>
+                        Everyday
+                    </p>
+                </div>
+            </div>
+
+            {{-- <div class="grid items-center gap-12 lg:grid-cols-2">
                 <!-- Image Section -->
                 <img src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/contact/contact-8.png"
                     alt="Contact illustration" class="size-full" />
@@ -668,7 +732,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 
