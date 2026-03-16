@@ -50,7 +50,7 @@
                                 Divisi
                                 <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
                             </button>
-                            <ul class="dropdown-menu  rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10  dropdown-open:opacity-100 hidden"
+                            <ul class="dropdown-menu rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:ring-white/10  dropdown-open:opacity-100 hidden"
                                 role="menu" aria-orientation="vertical" aria-labelledby="dropdown-nav">
                                 <li><a class="dropdown-item" href="#">Badan Pengurus Harian</a></li>
                                 <li><a class="dropdown-item" href="#">Rekrutmen Sumber Daya Manusia</a></li>
@@ -91,12 +91,11 @@
                 <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
                     <div tabindex="0" class="fixed inset-0 focus:outline-none">
                         <el-dialog-panel
-                            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1">
                             <div class="flex items-center justify-between">
                                 <a href="#" class="-m-1.5 p-1.5">
                                     <span class="sr-only">Your Company</span>
-                                    <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                                        alt="" class="h-8 w-auto" />
+                                    <img src="img/himsi.png" alt="" class="h-8 w-auto" />
                                 </a>
                                 {{-- Close button --}}
                                 <button type="button" command="close" commandfor="mobile-menu"
@@ -110,25 +109,67 @@
                                 </button>
                             </div>
                             {{-- Sidebar/Navigation link mobile --}}
-                            <div class="mt-6 flow-root">
-                                <div class="-my-6 divide-y divide-white/10">
-                                    {{-- Navigation links --}}
-                                    <div class="space-y-2 py-6">
-                                        <a href="#"
-                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">About</a>
-                                        <a href="#"
-                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Divisi</a>
-                                        <a href="#"
-                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Proker</a>
-                                        <a href="#"
-                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contact</a>
-                                    </div>
-                                    {{-- Login --}}
-                                    <div class="py-6">
-                                        <a href="#"
-                                            class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Log
-                                            in</a>
-                                    </div>
+                            <div class="divide-y mt-7 flow-root">
+                                {{-- Navigation links --}}
+                                <div class="pt-4 pb-6 font-semibold text-white">
+                                    <ul class="menu p-0">
+                                        <li>
+                                            <a href="#">
+                                                <span class="overlay-minified:hidden">Home</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="overlay-minified:hidden">Account</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="overlay-minified:hidden">Notifications</span>
+                                            </a>
+                                        </li>
+                                        <li
+                                            class="dropdown relative [--adaptive:none] [--strategy:static] overlay-minified:[--adaptive:adaptive] overlay-minified:[--strategy:fixed] overlay-minified:[--offset:15] overlay-minified:[--trigger:hover] overlay-minified:[--placement:right-start]">
+                                            <button id="dropdown-default" type="button"
+                                                class="dropdown-toggle flex items-center justify-between"
+                                                aria-haspopup="menu" aria-expanded="false"
+                                                aria-label="Dropdown flex items-center justify-between">
+                                                {{-- <span class="icon-[tabler--apps] size-5"></span> --}}
+                                                <span class="overlay-minified:hidden">Apps</span>
+                                                <span
+                                                    class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4 overlay-minified:hidden"></span>
+                                            </button>
+                                            <ul class="dropdown-menu mt-0 shadow-none overlay-minified:shadow-md overlay-minified:shadow-base-300/20 dropdown-open:opacity-100 hidden min-w-60 overlay-minified:before:absolute        overlay-minified:before:top-0 overlay-minified:before:h-full overlay-minified:before:w-4 before:bg-transparent"
+                                                role="menu" aria-orientation="vertical"
+                                                aria-labelledby="dropdown-default">
+                                                <li>
+                                                    <a href="#">
+                                                        Email
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Calendar
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="overlay-minified:hidden">Notifications</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                {{-- Login --}}
+                                <div class="pt-4 pb-6 font-semibold text-white">
+                                    <ul class="menu p-0">
+                                        <li class="">
+                                            <a href="#" class="overlay-minified:hidden">Log in
+                                                <span aria-hidden="true">&rarr;</span></a>
+
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </el-dialog-panel>
@@ -275,11 +316,17 @@
     {{-- structure organizasi --}}
     <div class="py-8 sm:py-16 lg:py-24">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="mb-12 text-center sm:mb-16 lg:mb-24">
-                <h2 class="text-base-content mb-4 text-2xl font-semibold md:text-3xl lg:text-4xl">
-                    OUR TEAM
+            <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
+                <h2 class="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">
+                    <span class="relative z-1 font-bold">
+                        Meet
+                        <span
+                            class="from-primary absolute start-0 bottom-1 -z-1 h-0.5 w-full bg-gradient-to-r to-transparent to-80%"
+                            aria-hidden="true"></span>
+                    </span>
+                    Our Team
                 </h2>
-                <p class="text-base-content/80 text-lg font-medium text-pretty sm:text-xl/8">
+                <p class="text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
                     Tim yang bergerak bersama untuk menciptakan program, kegiatan, dan dampak positif bagi Mahasiswa.
                 </p>
             </div>
