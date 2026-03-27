@@ -438,7 +438,7 @@
         </div>
 
         {{-- timeline --}}
-        <div class="py-8 sm:py-16 lg:py-24 flex align-items justify-center content-center">
+        <div class="flex align-items justify-center content-center">
             <ul class="timeline timeline-snap-icon timeline-compact timeline-vertical w-auto">
                 <span class="text-sm">April 1, 2024</span>
                 <!-- timeline item 1-->
