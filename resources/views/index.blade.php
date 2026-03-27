@@ -229,13 +229,13 @@
                 <div class="lg:pt-4 lg:pr-8">
                     <div class="lg:max-w-lg">
                         <h3
-                            class="text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">
+                            class="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">
                             Apa Itu Himsi</h3>
-                        <p class="mt-5 text-lg/7 text-gray-700 dark:text-gray-300">Himpunan Mahasiswa Sistem Informasi
+                        <p class="mt-5 text-base  text-justify text-gray-700 dark:text-gray-300 lg:text-lg/7">Himpunan
+                            Mahasiswa Sistem Informasi
                             atau disingkat dengan HIMSI adalah organisasi mahasiswa yang mewadahi mahasiswa program
                             studi sistem informasi universitas bina sarana informatika.</p>
-                        <dl
-                            class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none dark:text-gray-400">
+                        <dl class="mt-10 max-w-xl space-y-8 text-gray-600 lg:max-w-none dark:text-gray-400">
                             <dl
                                 class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
                                 <div class="relative pl-16">
@@ -252,9 +252,11 @@
                                         </div>
                                         Visi
                                     </dt>
-                                    <dd class="mt-2 text-justify text-[16px] text-gray-700 dark:text-gray-300">Morbi
+                                    <p class=""></p>
+                                    <p class="mt-2 text-justify text-sm text-gray-700 dark:text-gray-300 lg:text-lg">
                                         Menjadikan HIMSI sebagai Himpunan yang kreatif, kompetitif, bertanggung jawab,
-                                        dan berwawasan global.</dd>
+                                        dan berwawasan global.
+                                    </p>
                                 </div>
                                 <div class="relative pl-16">
                                     <dt class="text-lg/7 font-semibold text-gray-900 dark:text-white">
@@ -270,10 +272,10 @@
                                         </div>
                                         Misi
                                     </dt>
-                                    <dd class="mt-2 text-justify text-[16px] text-gray-700 dark:text-gray-300">
+                                    <p class="mt-2 text-justify text-sm text-gray-700 dark:text-gray-300 lg:text-lg">
                                         Berkontribusi dalam bidang Sistem Informasi, membentuk mahasiswa berprestasi,
                                         menanamkan disiplin, solidaritas, serta menjalin kerja sama.
-                                    </dd>
+                                    </p>
                                 </div>
                             </dl>
                         </dl>
@@ -312,48 +314,35 @@
     </div>
 
     {{-- Divisi --}}
-
-
-    {{-- structure organizasi --}}
-    <div class="py-8 sm:py-16 lg:py-24">
-        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
-                <h2 class="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">
-                    <span class="relative z-1 font-bold">
-                        Meet
-                        <span
-                            class="from-primary absolute start-0 bottom-1 -z-1 h-0.5 w-full bg-gradient-to-r to-transparent to-80%"
-                            aria-hidden="true"></span>
-                    </span>
-                    Our Team
-                </h2>
-                <p class="text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
-                    Tim yang bergerak bersama untuk menciptakan program, kegiatan, dan dampak positif bagi Mahasiswa.
-                </p>
-            </div>
-            <!-- Team Members -->
-            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-x-6 lg:gap-y-10 xl:grid-cols-4">
-                <!-- Members -->
-                <div class="card bg-gray-900 card-border hover:border-primary h-max shadow-none">
-                    <figure class="bg-base-200 pt-6">
-                        <img src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/team/team-6.png"
-                            alt="Phillip Bothman" class="h-60 w-auto" />
-                    </figure>
-                    <div class="card-body gap-3">
-                        <h3 class="text-base-content text-lg font-medium">Phillip Bothman</h3>
-                        <div class="divider"></div>
-                        <div>
-                            <p class="text-base-content mb-1 font-medium">Founder & CEO</p>
-                            <p class="text-base-content/80">A visionary leader driving innovation and collaboration.
-                            </p>
-                        </div>
-                        <div class="card-actions h-5 gap-3">
-                            <a href="#" class="text-accent"><span
-                                    class="icon-[tabler--brand-linkedin] size-5.5"></span></a>
-                            <a href="#" class="text-primary">
-                                <span class="icon-[fluent--document-pdf-16-filled] size-5.5"></span>
-                            </a>
-                        </div>
+    <div class="py-8 px-4 sm:py-16 lg:py-24 lg:px-8">
+        <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
+            <h2 class="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">
+                <span class="relative z-1 font-bold">
+                    Our
+                    <span
+                        class="from-primary absolute start-0 bottom-1 -z-1 h-0.5 w-full bg-gradient-to-r to-transparent to-80%"
+                        aria-hidden="true"></span>
+                </span>
+                Divisi 
+            </h2>
+            <p class="text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
+                Divisi yang bergerak bersama untuk menciptakan program, kegiatan, dan dampak positif bagi Mahasiswa.
+            </p>
+        </div>
+        {{-- Team division --}}
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <div class="card glass text-white sm:max-w-sm">
+                <figure><img
+                        src="https://img.freepik.com/vektor-premium/desain-logo-sekolah-pendidikan_586739-1335.jpg"
+                        alt="iphones" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title mb-2.5 text-white">Smartphone</h2>
+                    <div class="divider"></div>
+                    <p class="mb-4">A high-quality smartphone with the latest features for a premium user experience.
+                    </p>
+                    <div class="card-actions">
+                        <button class="btn btn-warning">Buy Now</button>
                     </div>
                 </div>
             </div>
@@ -430,6 +419,116 @@
         </div>
     </div>
 
+    {{-- Pendaftaran --}}
+    <div class="py-8 sm:py-16 lg:py-24">
+        {{-- judul --}}
+        <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
+            <h2 class="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">
+                <span class="relative z-1 font-bold">
+                    Timeline
+                    <span
+                        class="from-primary absolute start-0 bottom-1 -z-1 h-0.5 w-full bg-gradient-to-r to-transparent to-80%"
+                        aria-hidden="true"></span>
+                </span>
+                Pendaftaran HIMSI UBSI BSD
+            </h2>
+            <p class="text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
+                Timeline kegiatan pendaftaran anggota baru HIMSI UBSI BSD
+            </p>
+        </div>
+
+        {{-- timeline --}}
+        <div class="py-8 sm:py-16 lg:py-24 flex align-items justify-center content-center">
+            <ul class="timeline timeline-snap-icon timeline-compact timeline-vertical w-auto">
+                <span class="text-sm">April 1, 2024</span>
+                <!-- timeline item 1-->
+                <li>
+                    <div class="timeline-middle">
+                        <span class="bg-primary/20 flex size-4.5 items-center justify-center rounded-full">
+                            <span class="badge badge-primary size-3 rounded-full p-0"></span>
+                        </span>
+                    </div>
+                    <div class="timeline-end ms-2 m-3 w-full rounded-lg">
+                        <div class="text-base-content pt-0.5 mb-3 font-medium">12 Invoices have been paid</div>
+                        <p class="mb-2">Invoices have been paid to the company</p>
+                        <button class="btn btn-sm btn-soft btn-secondary">
+                            <span class="icon-[tabler--file-type-pdf] text-error"></span>
+                            templatecv.pdf
+                        </button>
+                    </div>
+                    <hr />
+                </li>
+                <!-- /timeline item 1-->
+                <span class="mt-2 text-sm">March 31, 2024</span>
+                <!-- timeline item 2-->
+                <li>
+                    <div class="timeline-middle">
+                        <span class="bg-success/20 flex size-4.5 items-center justify-center rounded-full">
+                            <span class="badge badge-success size-3 rounded-full p-0"></span>
+                        </span>
+                    </div>
+                    <div class="timeline-end ms-2 m-3 w-full rounded-lg">
+                        <div class="text-base-content pt-0.5 mb-3 font-medium">Client meeting</div>
+                        <p class="mb-2">Project meeting with john @10:15am</p>
+                        <div class="flex gap-2">
+                            <div class="avatar">
+                                <div class="size-8 rounded-full">
+                                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-1.png"
+                                        alt="User Avatar" />
+                                </div>
+                            </div>
+                            <div class="text-sm">
+                                <p class="font-medium">Lester McCarthy (Client)</p>
+                                <p>CEO of ThemeSelection</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                </li>
+                <!-- /timeline item 2-->
+                <span class="mt-2 text-sm">March 31, 2024</span>
+                <!-- timeline item 3-->
+                <li>
+                    <div class="timeline-middle">
+                        <span class="bg-info/20 flex size-4.5 items-center justify-center rounded-full">
+                            <span class="badge badge-info size-3 rounded-full p-0"></span>
+                        </span>
+                    </div>
+                    <div class="timeline-end ms-2 m-3 w-full rounded-lg">
+                        <div class="text-base-content pt-0.5 mb-3 font-medium">Create a new project for client</div>
+                        <p class="mb-2">6 team members in a project</p>
+                        <div class="avatar-group pull-up -space-x-4">
+                            <div class="avatar">
+                                <div class="w-8">
+                                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-1.png"
+                                        alt="User Avatar" />
+                                </div>
+                            </div>
+                            <div class="avatar">
+                                <div class="w-8">
+                                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-2.png"
+                                        alt="User Avatar" />
+                                </div>
+                            </div>
+                            <div class="avatar">
+                                <div class="w-8">
+                                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-4.png"
+                                        alt="User Avatar" />
+                                </div>
+                            </div>
+                            <div class="avatar avatar-placeholder">
+                                <div class="bg-neutral text-neutral-content w-8">
+                                    <span>+3</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                </li>
+                <!-- /timeline item 3-->
+            </ul>
+        </div>
+    </div>
 
     {{-- FAQ/Pertanyaan --}}
     <div class="py-8 sm:py-16 lg:py-24 text-lg ">
@@ -579,11 +678,19 @@
     <div class="py-8 sm:py-16 lg:py-24">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <!-- Header -->
-            <div class="relative mx-auto mb-12 w-fit sm:mb-16 lg:mb-24">
-                <h2 class="text-base-content text-2xl font-bold md:text-3xl lg:text-4xl">Contact Us</h2>
-                <span
-                    class="from-primary/40 to-primary/5 absolute start-0 top-9 h-1 w-full rounded-full bg-gradient-to-r">
+            <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
+                <h2 class="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">
+                    <span class="relative z-1 font-bold">
+                        Contuct
+                        <span
+                            class="from-primary absolute start-0 bottom-1 -z-1 h-0.5 w-full bg-gradient-to-r to-transparent to-80%"
+                            aria-hidden="true"></span>
                     </span>
+                    Us
+                </h2>
+                <p class="text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
+                    Punya pertanyaan atau ingin terhubung dengan HIMSI? Jangan ragu untuk menghubungi kami.
+                </p>
             </div>
 
             {{-- Pesan --}}
@@ -627,9 +734,24 @@
                 <div class="space-y-6 lg:col-span-3">
                     {{-- Maps --}}
                     <div class="border-base-content/20 rounded-box border p-6 text-center">
-                        <h3 class="text-base-content mb-4 text-xl font-semibold">Email/Phone</h3>
-                        <p class="text-base-content/80 mb-2 break-all">johndoe@gmail.com</p>
-                        <p class="text-base-content/80">+148 589 2001 2466</p>
+                        <h3 class="text-base-content text-xl font-semibold">Email/Phone</h3>
+                        <p class="text-base-content/80 mb-3"> Beritahu kami apa yang Anda butuhkan </p>
+                        <ul class="list-none mb-4 flex flex-col items-center gap-4">
+                            <li>
+                                <a href="" target="_blank" rel="noopener noreferrer"
+                                    class="text-base-content/80 flex items-center justify-center gap-1">
+                                    <span class="icon-[tabler--brand-gmail] size-5"></span>
+                                    himsibsd@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" rel="noopener noreferrer"
+                                    class="text-base-content/80 flex items-center justify-center gap-1">
+                                    <span class="icon-[tabler--brand-whatsapp] size-5"></span>
+                                    +62 812 3456 7890
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                     {{-- Contact --}}
                     <div class="border-base-content/20 rounded-box border p-6 text-center">
