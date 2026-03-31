@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">\
     <link rel="icon" type="image/png" href="https://himsiubsi.my.id/images/himsi.png">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <title>divisi</title>
+    <title>Himsi - Badan Pengurus Harian</title>
 </head>
 
 <body class="bg-gray-900 text-justify">

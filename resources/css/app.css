@@ -2,8 +2,11 @@
 
 @plugin "flyonui";
 @plugin "@iconify/tailwind4";
+@plugin "tailwindcss-motion";
 
+@import "tailwindcss-intersect";
 @import "flyonui/variants.css";
+
 @source "../node_modules/flyonui/flyonui.js"; 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';

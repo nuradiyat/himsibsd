@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Himsi BSD</title>
+    <title>Himsi - Himpunan Mahasiswa Sistem Informasi BSD</title>
     <link rel="icon" type="image/png" href="https://himsiubsi.my.id/images/himsi.png">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body class="bg-gray-900 text-justify">
+
 
     {{-- Hero section --}}
     <div class="bg-gray-900">
@@ -225,7 +226,7 @@
     <div class="overflow-hidden bg-white py-24 sm:py-32 dark:bg-gray-900">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div
-                class="mx-auto grid max-w-2xl grid-cols-1 gap-x-40 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                class="mx-auto grid max-w-2xl grid-cols-1 gap-x-40 gap-y-16 sm:gap-x-30  sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                 <div class="lg:pt-4 lg:pr-8">
                     <div class="lg:max-w-lg">
                         <h3
@@ -253,7 +254,7 @@
                                         Visi
                                     </dt>
                                     <p class=""></p>
-                                    <p class="mt-2 text-justify text-sm text-gray-700 dark:text-gray-300 lg:text-lg">
+                                    <p class="mt-2 text-justify text-sm text-gray-700 dark:text-gray-300 lg:text-base">
                                         Menjadikan HIMSI sebagai Himpunan yang kreatif, kompetitif, bertanggung jawab,
                                         dan berwawasan global.
                                     </p>
@@ -272,7 +273,7 @@
                                         </div>
                                         Misi
                                     </dt>
-                                    <p class="mt-2 text-justify text-sm text-gray-700 dark:text-gray-300 lg:text-lg">
+                                    <p class="mt-2 text-justify text-sm text-gray-700 dark:text-gray-300 lg:text-base">
                                         Berkontribusi dalam bidang Sistem Informasi, membentuk mahasiswa berprestasi,
                                         menanamkan disiplin, solidaritas, serta menjalin kerja sama.
                                     </p>
@@ -323,14 +324,15 @@
                         class="from-primary absolute start-0 bottom-1 -z-1 h-0.5 w-full bg-gradient-to-r to-transparent to-80%"
                         aria-hidden="true"></span>
                 </span>
-                Divisi 
+                Divisi
             </h2>
             <p class="text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
                 Divisi yang bergerak bersama untuk menciptakan program, kegiatan, dan dampak positif bagi Mahasiswa.
             </p>
         </div>
         {{-- Team division --}}
-        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div
+            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             <div class="card glass text-white sm:max-w-sm">
                 <figure><img
                         src="https://img.freepik.com/vektor-premium/desain-logo-sekolah-pendidikan_586739-1335.jpg"
@@ -366,7 +368,8 @@
             </p>
         </div>
         <div id="horizontal-thumbnails" data-carousel='{ "loadingClasses": "opacity-0" }'
-            class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            class="relative mx-auto max-w-7xl px-3.5 sm:px-6 lg:px-8">
+            {{-- bagian border mau di ilangin rounded-none --}}
             <div class="carousel">
                 <div class="carousel-body h-3/4 opacity-0">
                     <!-- Slide 1 -->
@@ -405,13 +408,13 @@
                 </div>
                 <!-- Previous Slide -->
                 <button type="button"
-                    class="carousel-prev start-5 max-sm:start-3 carousel-disabled:opacity-50 size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow-base-300/20 shadow-sm">
+                    class="carousel-prev start-5 max-sm:start-3 carousel-disabled:opacity-50 size-4.5 lg:size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow-base-300/20 shadow-sm">
                     <span class="icon-[tabler--chevron-left] size-5 cursor-pointer"></span>
                     <span class="sr-only">Previous</span>
                 </button>
                 <!-- Next Slide -->
                 <button type="button"
-                    class="carousel-next end-5 max-sm:end-3 carousel-disabled:opacity-50 size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow-base-300/20 shadow-sm">
+                    class="carousel-next end-5 max-sm:end-3 carousel-disabled:opacity-50 size-4.5 lg:size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow-base-300/20 shadow-sm">
                     <span class="icon-[tabler--chevron-right] size-5"></span>
                     <span class="sr-only">Next</span>
                 </button>
