@@ -12,7 +12,7 @@
 
 <body>
     <div
-        class="flex h-auto min-h-screen items-center justify-center overflow-x-hidden bg-[url('https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/auth/auth-background-2.png')] bg-cover bg-center bg-no-repeat py-10 bg-gray-900">
+        class="flex h-auto min-h-screen items-center justify-center overflow-hidden bg-[url('https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/auth/auth-background-2.png')] bg-cover bg-center bg-no-repeat py-10 bg-gray-900">
         <div class="relative flex items-center justify-center px-4 sm:px-6 lg:px-8">
             <div class="absolute">
                 <svg width="612" height="697" viewBox="0 0 612 697" fill="none"
