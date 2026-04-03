@@ -422,6 +422,60 @@
         </div>
     </div>
 
+    {{-- <div class="py-24 sm:py-32">
+        <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
+            <h2 class="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">
+                <span class="relative z-1 font-bold">
+                    Explore our
+                    <span
+                        class="from-primary absolute start-0 bottom-1 -z-1 h-0.5 w-full bg-gradient-to-r to-transparent to-80%"
+                        aria-hidden="true"></span>
+                </span>
+                Gallery
+            </h2>
+            <p class="text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
+                Explore our gallery to learn more about our amazing products and their features.
+            </p>
+        </div>
+        <div id="auto-play" data-carousel='{ "loadingClasses": "opacity-0", "isAutoPlay": true, "speed": 1500 }'
+            class="relative w-full">
+            <div class="carousel h-80">
+                <div class="carousel-body opacity-0 h-full">
+                    <!-- Slide 1 -->
+                    <div class="carousel-slide">
+                        <div class="bg-base-200/60 flex h-full justify-center p-6">
+                            <span class="self-center text-2xl sm:text-4xl">First slide</span>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-slide">
+                        <div class="bg-base-200/80 flex h-full justify-center p-6">
+                            <span class="self-center text-2xl sm:text-4xl">Second slide</span>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="carousel-slide">
+                        <div class="bg-base-200 flex h-full justify-center p-6">
+                            <span class="self-center text-2xl sm:text-4xl">Third slide</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Previous Slide -->
+            <button type="button"
+                class="carousel-prev start-5 max-sm:start-3 carousel-disabled:opacity-50 size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow-base-300/20 shadow-sm">
+                <span class="icon-[tabler--chevron-left] size-5 cursor-pointer"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <!-- Next Slide -->
+            <button type="button"
+                class="carousel-next end-5 max-sm:end-3 carousel-disabled:opacity-50 size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow-base-300/20 shadow-sm">
+                <span class="icon-[tabler--chevron-right] size-5"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+    </div> --}}
+
     {{-- Pendaftaran --}}
     <div class="py-8 sm:py-16 lg:py-24">
         {{-- judul --}}
@@ -530,6 +584,236 @@
                 </li>
                 <!-- /timeline item 3-->
             </ul>
+        </div>
+    </div>
+
+    {{-- testimonial --}}
+    <div class="bg-gray-900">
+        {{-- judul --}}
+        <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
+            <h2 class="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">
+                <span class="relative z-1 font-bold">
+                    Timeline
+                    <span
+                        class="from-primary absolute start-0 bottom-1 -z-1 h-0.5 w-full bg-gradient-to-r to-transparent to-80%"
+                        aria-hidden="true"></span>
+                </span>
+                Pendaftaran HIMSI UBSI BSD
+            </h2>
+            <p class="text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">
+                Timeline kegiatan pendaftaran anggota baru HIMSI UBSI BSD
+            </p>
+        </div>
+        {{-- carousel testimonial --}}
+        <div class="py-8 sm:py-16 lg:py-24">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div id="multi-slide"
+                    data-carousel='{ "loadingClasses": "opacity-0", "slidesQty": { "xs": 1, "md": 2 } }'
+                    class="relative flex w-full gap-12 max-lg:flex-col md:gap-16 lg:items-center lg:gap-24">
+                    <div>
+                        <div class="space-y-4">
+                            <p class="text-primary text-sm font-medium uppercase">Real Customers</p>
+                            <h2 class="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">Customers
+                                Feedback
+                            </h2>
+                            <p class="text-base-content/80 text-xl">From career changes to dream jobs, here's how
+                                FlyonUI
+                                helped.</p>
+                        </div>
+                        <div class="mt-10 flex gap-4">
+                            <button
+                                class="btn btn-square btn-sm carousel-prev btn-primary carousel-disabled:opacity-100 carousel-disabled:btn-outline relative hover:text-white"
+                                disabled="disabled">
+                                <span class="icon-[tabler--arrow-left] size-5"></span>
+                            </button>
+                            <button
+                                class="btn btn-square btn-sm carousel-next btn-primary carousel-disabled:opacity-100 carousel-disabled:btn-outline relative hover:text-white">
+                                <span class="icon-[tabler--arrow-right] size-5"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel rounded-box">
+                        <div class="carousel-body gap-6 opacity-0">
+                            <!-- Slide 1 -->
+                            <div class="carousel-slide">
+                                <div
+                                    class="card card-border hover:border-primary transition-border h-full shadow-none duration-300">
+                                    <!-- Star Rating -->
+                                    <div class="card-body gap-5">
+                                        <!-- User Info -->
+                                        <div class="flex items-center gap-3">
+                                            <div class="avatar">
+                                                <div class="size-10 rounded-full">
+                                                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-17.png"
+                                                        alt="Craig Bator" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-base-content font-medium">Craig Bator</h4>
+                                                <p class="text-base-content/80 text-sm">
+                                                    CEO & Co Founder at
+                                                    <span class="text-base-content font-semibold">Zendesk</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-1">
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                        </div>
+                                        <!-- Content -->
+                                        <p class="text-base-content/80">
+                                            FlyonUI has made designing my web applications effortless. The components
+                                            are
+                                            easy to customize and
+                                            integrate seamlessly!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-slide">
+                                <div
+                                    class="card card-border hover:border-primary transition-border h-full shadow-none duration-300">
+                                    <!-- Star Rating -->
+                                    <div class="card-body gap-5">
+                                        <!-- User Info -->
+                                        <div class="flex items-center gap-3">
+                                            <div class="avatar">
+                                                <div class="size-10 rounded-full">
+                                                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-5.png"
+                                                        alt="Craig Bator" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-base-content font-medium">Martin Dorwart</h4>
+                                                <p class="text-base-content/80 text-sm">
+                                                    Product manager at
+                                                    <span class="text-base-content font-semibold">Orbit</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-1">
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-half-filled] text-warning size-6 shrink-0"></span>
+                                        </div>
+                                        <!-- Content -->
+                                        <p class="text-base-content/80">
+                                            With FlyonUI, I can easily track my investments and see how they.re
+                                            performing
+                                            in real-time.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="carousel-slide">
+                                <div
+                                    class="card card-border hover:border-primary transition-border h-full shadow-none duration-300">
+                                    <!-- Star Rating -->
+                                    <div class="card-body gap-5">
+                                        <!-- User Info -->
+                                        <div class="flex items-center gap-3">
+                                            <div class="avatar">
+                                                <div class="size-10 rounded-full">
+                                                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-3.png"
+                                                        alt="Alexandra Lee" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-base-content font-medium">Alexandra Lee</h4>
+                                                <p class="text-base-content/80 text-sm">
+                                                    Lead Developer at
+                                                    <span class="text-base-content font-semibold">TechNova</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-1">
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                        </div>
+                                        <!-- Content -->
+                                        <p class="text-base-content/80">
+                                            FlyonUI's components saved us so much time! The responsive designs and
+                                            intuitive
+                                            interface made our
+                                            development process faster and more efficient.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4 -->
+                            <div class="carousel-slide">
+                                <div
+                                    class="card card-border hover:border-primary transition-border h-full shadow-none duration-300">
+                                    <!-- Star Rating -->
+                                    <div class="card-body gap-5">
+                                        <!-- User Info -->
+                                        <div class="flex items-center gap-3">
+                                            <div class="avatar">
+                                                <div class="size-10 rounded-full">
+                                                    <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-12.png"
+                                                        alt="Jason Wu" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <h4 class="text-base-content font-medium">Jason Wu</h4>
+                                                <p class="text-base-content/80 text-sm">
+                                                    Product Designer at
+                                                    <span class="text-base-content font-semibold">InnovateX</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="flex gap-1">
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                            <span
+                                                class="icon-[tabler--star-filled] text-warning size-6 shrink-0"></span>
+                                        </div>
+                                        <!-- Content -->
+                                        <p class="text-base-content/80">
+                                            FlyonUI’s design library helped us scale our UI design efforts while
+                                            maintaining
+                                            a consistent,
+                                            professional look. Couldn’t have asked for a better tool!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
