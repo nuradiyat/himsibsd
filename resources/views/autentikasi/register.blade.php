@@ -12,8 +12,8 @@
 
 <body>
     <div
-        class="flex h-auto min-h-screen items-center justify-center overflow-x-hidden bg-[url('https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/auth/auth-background-2.png')] bg-cover bg-center bg-no-repeat py-10">
-        <div class="relative flex items-center justify-center px-4 sm:px-6 lg:px-8">
+        class="flex h-auto min-h-screen items-center justify-center overflow-x-hidden bg-[url('https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/auth/auth-background-2.png')] bg-cover bg-center bg-no-repeat py-10 bg-gray-900">
+        <div class="relative w-2xl flex items-center justify-center px-4 sm:px-6 lg:px-8">
             <div class="absolute">
                 <svg width="612" height="697" viewBox="0 0 612 697" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -48,14 +48,9 @@
                 <div class="space-y-4">
                     <form class="mb-4 space-y-4" onsubmit="return false;">
                         <div>
-                            <label class="label-text" for="userName">Username*</label>
-                            <input type="text" placeholder="Enter your username" class="input" id="userName"
-                                required />
-                        </div>
-                        <div>
-                            <label class="label-text" for="userEmail">Email address*</label>
-                            <input type="email" placeholder="Enter your email address" class="input" id="userEmail"
-                                required />
+                            <label class="label-text" for="userNim">Nim - Nomor Induk Mahasiswa*</label>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="Enter your Nim"
+                                class="input" id="userNim" required />
                         </div>
                         <div>
                             <label class="label-text" for="userPassword">Password*</label>
@@ -86,15 +81,16 @@
                         <div class="flex items-center gap-2">
                             <input type="checkbox" class="checkbox checkbox-primary" id="policyagreement" />
                             <label class="label-text text-base-content/80 p-0 text-base" for="policyagreement">
-                                I agree to
-                                <a href="#" class="link link-animated link-primary font-normal">privacy policy &
-                                    terms?</a>
+                                Saya setuju dengan
+                                <a href="#" class="link link-animated link-primary font-normal">ketentuan
+                                    peraturan
+                                    yang berlaku di himpunan</a>
                             </label>
                         </div>
-                        <button class="btn btn-lg btn-primary btn-gradient btn-block">Sign Up to FlyonUI</button>
+                        <button class="btn btn-lg btn-primary btn-gradient btn-block">Daftar </button>
                     </form>
                     <p class="text-base-content/80 mb-4 text-center">
-                        Already have an account?
+                        Udah punya akun? Login aja
                         <a href="#" class="link link-animated link-primary font-normal">Sign in instead</a>
                     </p>
                     <div class="divider">or</div>

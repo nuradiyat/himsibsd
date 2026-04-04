@@ -38,22 +38,22 @@
             <div
                 class="bg-base-100 shadow-base-300/20 z-1 w-full space-y-6 rounded-xl p-6 shadow-md sm:min-w-md lg:p-8">
                 <div class="flex items-center gap-3">
-                    <img src="https://cdn.flyonui.com/fy-assets/logo/logo.png" class="size-8" alt="brand-logo" />
-                    <h2 class="text-base-content text-xl font-bold">FlyonUI</h2>
+                    <img src="https://himsiubsi.my.id/images/himsi.png" class="size-8" alt="brand-logo" />
+                    <h2 class="text-base-content text-xl font-bold">Himsi BSD</h2>
                 </div>
                 <div>
-                    <h3 class="text-base-content mb-1.5 text-2xl font-semibold">Sign in to FlyonUI</h3>
-                    <p class="text-base-content/80">Ship Faster and Focus on Growth.</p>
+                    <h3 class="text-base-content mb-1.5 text-2xl font-semibold">Login Untuk Masuk</h3>
+                    <p class="text-base-content/80">Masukan Email Dan Password Anda</p>
                 </div>
                 <div class="space-y-4">
                     <form class="mb-4 space-y-4" onsubmit="return false;">
                         <div>
-                            <label class="label-text" for="userEmail">Email address*</label>
-                            <input type="email" placeholder="Enter your email address" class="input" id="userEmail"
-                                required />
+                            <label class="label-text" for="userNim">Nim - Nomor Induk Mahasiswa*</label>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*"
+                                placeholder="Enter your Nim" class="input" id="userNim" required />
                         </div>
                         <div>
-                            <label class="label-text" for="userPassword">Password*</label>
+                            <label class="label-text" for="userPassword">Password</label>
                             <div class="input">
                                 <input id="userPassword" type="password" placeholder="············" required />
                                 <button type="button" data-toggle-password='{ "target": "#userPassword" }'
