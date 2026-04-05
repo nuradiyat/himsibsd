@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="icon" type="image/png" href="https://himsiubsi.my.id/images/himsi.png">
+    <link rel="icon" type="image/png" href="https://himsiubsi.my.id/images/himsi.png">
+    <link rel="stylesheet" href="../path/to/apexcharts/apexcharts.css" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Document</title>
 </head>
@@ -98,7 +99,8 @@
                                     </span>
                                 </button>
                                 <div class="dropdown-menu dropdown-open:opacity-100 hidden w-full max-w-122 space-y-0.5 px-3"
-                                    role="menu" aria-orientation="vertical" aria-labelledby="notification-dropdown">
+                                    role="menu" aria-orientation="vertical"
+                                    aria-labelledby="notification-dropdown">
                                     <div class="mb-0 flex w-full items-center justify-between gap-4 py-2.5">
                                         <h6 class="text-base-content/50 text-sm uppercase">Notification</h6>
                                         <span class="badge badge-soft badge-sm badge-primary rounded-full">8 New</span>
@@ -2901,6 +2903,12 @@
             <!-- ---------- END FOOTER CONTENT ---------- -->
         </div>
     </div>
+
+    {{-- Scripts JS --}}
+    <script src="../path/to/lodash/lodash.js"></script>
+    <script src="../path/to/apexcharts/dist/apexcharts.js"></script>
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/datatables.net/js/dataTables.min.js"></script>
 </body>
 
 </html>

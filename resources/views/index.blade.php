@@ -14,11 +14,11 @@
 
 
     <div class="bg-gray-900 text-justify">
-    
+
         {{-- Hero section --}}
         <div class="bg-gray-900">
             <header class="absolute inset-x-0 top-0 z-50">
-    
+
                 {{-- Navbar/Navigation --}}
                 <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8 sticky top-0 absolute">
                     {{-- Logo --}}
@@ -80,6 +80,7 @@
                                     <li><a class="dropdown-item" href="#">Lomba</a></li>
                                 </ul>
                             </li>
+                            <li><a href="#">Kabinet</a></li>
                         </ul>
                     </div>
                     {{-- Login --}}
@@ -88,7 +89,7 @@
                                 aria-hidden="true">&rarr;</span></a>
                     </div>
                 </nav>
-    
+
                 {{-- Mobile menu --}}
                 <el-dialog>
                     <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
@@ -104,8 +105,8 @@
                                     <button type="button" command="close" commandfor="mobile-menu"
                                         class="-m-2.5 rounded-md p-2.5 text-gray-200">
                                         <span class="sr-only">Close menu</span>
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                                            data-slot="icon" aria-hidden="true" class="size-6">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
                                             <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round"
                                                 stroke-linejoin="round" />
                                         </svg>
@@ -170,7 +171,7 @@
                                             <li class="">
                                                 <a href="#" class="overlay-minified:hidden">Log in
                                                     <span aria-hidden="true">&rarr;</span></a>
-    
+
                                             </li>
                                         </ul>
                                     </div>
@@ -180,7 +181,7 @@
                     </dialog>
                 </el-dialog>
             </header>
-    
+
             {{-- Hero section content --}}
             <div class="relative isolate px-6 pt-14 lg:px-8">
                 {{-- Gradient background --}}
@@ -197,19 +198,21 @@
                             class="relative rounded-full px-3 py-1 text-sm/6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
                             Selamat Datang di
                             <a href="#about" class="font-semibold text-indigo-400"><span aria-hidden="true"
-                                    class="absolute inset-0"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                                    class="absolute inset-0"></span>Read more <span
+                                    aria-hidden="true">&rarr;</span></a>
                         </div>
                     </div>
                     <div class="text-center">
                         <h1 class="text-4xl font-semibold tracking-tight text-balance text-white sm:text-6xl">Himpunan
                             Mahasiswa Sistem Informasi</h1>
-                        <p class="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">Bangun pengalaman yang
+                        <p class="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">Bangun pengalaman
+                            yang
                             bermakna, kembangkan potensi diri, dan berikan dampak positif bagi masyarakat.</p>
                         <div class="mt-10 flex items-center justify-center gap-x-6">
                             <a href="#"
                                 class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Get
                                 started</a>
-    
+
                             <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span
                                     aria-hidden="true">→</span></a>
                         </div>
@@ -223,10 +226,10 @@
                 </div>
             </div>
         </div>
-        
+
         {{-- How it works --}}
         <div class="overflow-hidden bg-white py-24 sm:py-32 dark:bg-gray-900">
-            <div class="mx-auto max-w-7xl px-2">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div
                     class="mx-auto grid max-w-2xl grid-cols-1 gap-x-40 gap-y-16 sm:gap-x-30  sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                     <div class="lg:pt-4 lg:pr-8">
@@ -234,7 +237,8 @@
                             <h3
                                 class="text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl dark:text-white">
                                 Apa Itu Himsi</h3>
-                            <p class="mt-5 text-base  text-justify text-gray-700 dark:text-gray-300 lg:text-lg/7">Himpunan
+                            <p class="mt-5 text-base  text-justify text-gray-700 dark:text-gray-300 lg:text-lg/7">
+                                Himpunan
                                 Mahasiswa Sistem Informasi
                                 atau disingkat dengan HIMSI adalah organisasi mahasiswa yang mewadahi mahasiswa program
                                 studi sistem informasi universitas bina sarana informatika.</p>
@@ -256,8 +260,10 @@
                                             Visi
                                         </dt>
                                         <p class=""></p>
-                                        <p class="mt-2 text-justify text-sm text-gray-700 dark:text-gray-300 lg:text-base">
-                                            Menjadikan HIMSI sebagai Himpunan yang kreatif, kompetitif, bertanggung jawab,
+                                        <p
+                                            class="mt-2 text-justify text-sm text-gray-700 dark:text-gray-300 lg:text-base">
+                                            Menjadikan HIMSI sebagai Himpunan yang kreatif, kompetitif, bertanggung
+                                            jawab,
                                             dan berwawasan global.
                                         </p>
                                     </div>
@@ -275,8 +281,10 @@
                                             </div>
                                             Misi
                                         </dt>
-                                        <p class="mt-2 text-justify text-sm text-gray-700 dark:text-gray-300 lg:text-base">
-                                            Berkontribusi dalam bidang Sistem Informasi, membentuk mahasiswa berprestasi,
+                                        <p
+                                            class="mt-2 text-justify text-sm text-gray-700 dark:text-gray-300 lg:text-base">
+                                            Berkontribusi dalam bidang Sistem Informasi, membentuk mahasiswa
+                                            berprestasi,
                                             menanamkan disiplin, solidaritas, serta menjalin kerja sama.
                                         </p>
                                     </div>
@@ -292,7 +300,7 @@
                 </div>
             </div>
         </div>
-    
+
         {{-- statistik --}}
         <div class="bg-gray-900 py-24 sm:py-32">
             <div
@@ -305,17 +313,19 @@
                     </div>
                     <div class="mx-auto flex max-w-xs flex-col gap-y-4">
                         <dt class="text-base/7 text-gray-400">Assets under holding</dt>
-                        <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">$119 trillion
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">$119
+                            trillion
                         </dd>
                     </div>
                     <div class="mx-auto flex max-w-xs flex-col gap-y-4">
                         <dt class="text-base/7 text-gray-400">New users annually</dt>
-                        <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">46,000</dd>
+                        <dd class="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">46,000
+                        </dd>
                     </div>
                 </dl>
             </div>
         </div>
-    
+
         {{-- Divisi --}}
         <div class="py-8 sm:py-16 lg:py-24 lg:px-8">
             <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
@@ -343,7 +353,8 @@
                     <div class="card-body">
                         <h2 class="card-title mb-2.5 text-white">Smartphone</h2>
                         <div class="divider"></div>
-                        <p class="mb-4">A high-quality smartphone with the latest features for a premium user experience.
+                        <p class="mb-4">A high-quality smartphone with the latest features for a premium user
+                            experience.
                         </p>
                         <div class="card-actions">
                             <button class="btn btn-warning">Buy Now</button>
@@ -352,7 +363,7 @@
                 </div>
             </div>
         </div>
-    
+
         {{-- Gallery --}}
         <div class="py-24 sm:py-32">
             <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
@@ -423,7 +434,7 @@
                 </div>
             </div>
         </div>
-    
+
         {{-- gallery auto play
         <div class="py-24 sm:py-32">
             <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
@@ -478,7 +489,7 @@
                 </button>
             </div>
         </div> --}}
-    
+
         {{-- Pendaftaran --}}
         <div class="py-8 sm:py-16 lg:py-24">
             {{-- judul --}}
@@ -496,7 +507,7 @@
                     Timeline kegiatan pendaftaran anggota baru HIMSI UBSI BSD
                 </p>
             </div>
-    
+
             {{-- timeline --}}
             <div class="flex align-items justify-center content-center">
                 <ul class="timeline timeline-snap-icon timeline-compact timeline-vertical w-auto">
@@ -555,7 +566,8 @@
                             </span>
                         </div>
                         <div class="timeline-end ms-2 m-3 w-full rounded-lg">
-                            <div class="text-base-content pt-0.5 mb-3 font-medium">Create a new project for client</div>
+                            <div class="text-base-content pt-0.5 mb-3 font-medium">Create a new project for client
+                            </div>
                             <p class="mb-2">6 team members in a project</p>
                             <div class="avatar-group pull-up -space-x-4">
                                 <div class="avatar">
@@ -589,7 +601,7 @@
                 </ul>
             </div>
         </div>
-    
+
         {{-- testimonial --}}
         <div class="py-8 sm:py-16 lg:py-24">
             {{-- judul --}}
@@ -673,7 +685,8 @@
                                             </div>
                                             <!-- Content -->
                                             <p class="text-base-content/80">
-                                                FlyonUI has made designing my web applications effortless. The components
+                                                FlyonUI has made designing my web applications effortless. The
+                                                components
                                                 are
                                                 easy to customize and
                                                 integrate seamlessly!
@@ -768,7 +781,7 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <!-- Slide 4 -->
                                 <div class="carousel-slide">
                                     <div
@@ -819,7 +832,7 @@
                 </div>
             </div>
         </div>
-    
+
         {{-- FAQ/Pertanyaan --}}
         <div class="py-8 sm:py-16 lg:py-24 text-lg ">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -853,7 +866,8 @@
                             aria-labelledby="payment-always" role="region">
                             <div class="px-5 pb-4">
                                 <p class="text-base-content/80 font-normal">
-                                    Mahasiswa Sistem Informasi UBSI dapat bergabung melalui open recruitment yang diumumkan
+                                    Mahasiswa Sistem Informasi UBSI dapat bergabung melalui open recruitment yang
+                                    diumumkan
                                     di media sosial atau website HIMSI.
                                 </p>
                             </div>
@@ -893,8 +907,10 @@
                             aria-labelledby="cancel-alawys" role="region">
                             <div class="px-5 pb-4">
                                 <p class="text-base-content/80 font-normal">
-                                    HIMSI memiliki 4 divisi utama: Pendidikan (pengembangan akademik & ilmu pengetahuan),
-                                    Kominfo (komunikasi & informasi), RSDM (pengembangan sumber daya mahasiswa), dan Litbang
+                                    HIMSI memiliki 4 divisi utama: Pendidikan (pengembangan akademik & ilmu
+                                    pengetahuan),
+                                    Kominfo (komunikasi & informasi), RSDM (pengembangan sumber daya mahasiswa), dan
+                                    Litbang
                                     (penelitian & pengembangan organisasi).
                                 </p>
                             </div>
@@ -954,7 +970,8 @@
                             aria-labelledby="cancel-alawys" role="region">
                             <div class="px-5 pb-4">
                                 <p class="text-base-content/80 font-normal">
-                                    HIMSI rutin mengadakan seminar, workshop, lomba, bakti sosial, dan kegiatan kebersamaan
+                                    HIMSI rutin mengadakan seminar, workshop, lomba, bakti sosial, dan kegiatan
+                                    kebersamaan
                                     untuk mempererat solidaritas anggota.
                                 </p>
                             </div>
@@ -963,10 +980,10 @@
                 </div>
             </div>
         </div>
-    
+
         {{-- Contact Section --}}
-        <div class="py-8 sm:py-16 lg:py-24">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="py-8 sm:py-16 lg:py-24 px-4 sm:px-4">
+            <div class="mx-auto max-w-7xl">
                 <!-- Header -->
                 <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
                     <h2 class="text-base-content text-2xl font-semibold md:text-3xl lg:text-4xl">
@@ -982,7 +999,7 @@
                         Punya pertanyaan atau ingin terhubung dengan HIMSI? Jangan ragu untuk menghubungi kami.
                     </p>
                 </div>
-    
+
                 {{-- Pesan --}}
                 <div class="card-body grid gap-10 lg:grid-cols-7">
                     <!-- Form Section -->
@@ -1017,7 +1034,8 @@
                                         class="icon-[tabler--message-circle-2] text-base-content/80 mx-4 mt-2 size-6 shrink-0"></span>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-gradient w-full">Book a Reservation</button>
+                            <button type="submit" class="btn btn-primary btn-gradient w-full">Book a
+                                Reservation</button>
                         </form>
                     </div>
                     <!-- Contact Information -->
@@ -1059,7 +1077,7 @@
                         </p>
                     </div>
                 </div>
-    
+
                 {{-- <div class="grid items-center gap-12 lg:grid-cols-2">
                     <!-- Image Section -->
                     <img src="https://cdn.flyonui.com/fy-assets/blocks/marketing-ui/contact/contact-8.png"
@@ -1147,9 +1165,9 @@
                 </div> --}}
             </div>
         </div>
-    
+
         {{-- Footer --}}
-        <div class="py-4 sm:py-6 lg:py-8">
+        <div class="py-4 sm:py-6 lg:py-8 px-4">
             <footer class="footer ">
                 <div class="flex w-full flex-wrap items-center justify-between">
                     <div class="flex items-center gap-2 text-xl font-bold text-base-content">
