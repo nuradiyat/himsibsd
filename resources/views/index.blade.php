@@ -1167,30 +1167,50 @@
         </div>
 
         {{-- Footer --}}
-        <div class="py-4 sm:py-6 lg:py-8 px-4">
-            <footer class="footer ">
-                <div class="flex w-full flex-wrap items-center justify-between">
-                    <div class="flex items-center gap-2 text-xl font-bold text-base-content">
-                        <img width="24" height="24"src="img/himsi.png" alt="Himsi BSD Logo">
-                        <span>Himsi BSD</span>
+        <footer>
+            <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+                <div class="flex items-center justify-between gap-3 max-md:flex-col">
+                    <div class="text-base-content flex items-center gap-3 text-xl font-bold">
+                        <img src="https://cdn.flyonui.com/fy-assets/logo/logo.png" class="size-8" alt="brand-logo" />
+                        <span>FlyonUI</span>
                     </div>
-                    <aside class="grid-flow-col items-center">
-                        <p> ©2024 <a class="link link-hover font-medium" href="#">FlyonUI</a> </p>
-                    </aside>
-                    <div class="flex h-5 gap-4">
-                        <a href="#" class="link" aria-label="Instagram Link">
+                    <!-- Navigation -->
+                    <nav class="flex items-center gap-6">
+                        <a href="#" class="link link-animated text-base-content/80 font-medium">About</a>
+                        <a href="#" class="link link-animated text-base-content/80 font-medium">Features</a>
+                        <a href="#" class="link link-animated text-base-content/80 font-medium">Works</a>
+                        <a href="#" class="link link-animated text-base-content/80 font-medium">Career</a>
+                    </nav>
+                    <!-- Social Icons -->
+                    <div class="text-base-content flex h-5 gap-4">
+                        <a href="#" aria-label="Facebook">
+                            <span class="icon-[tabler--brand-facebook] size-5"></span>
+                        </a>
+                        <a href="#" aria-label="Instagram">
                             <span class="icon-[tabler--brand-instagram] size-5"></span>
                         </a>
-                        <a href="#" class="link" aria-label="WhatsApp Link">
-                            <span class="icon-[tabler--brand-whatsapp] size-5"></span>
-                        </a>
-                        <a href="#" class="link" aria-label="X Link">
+                        <a href="#" aria-label="Twitter">
                             <span class="icon-[tabler--brand-x] size-5"></span>
+                        </a>
+                        <a href="#" aria-label="Github">
+                            <span class="icon-[tabler--brand-github] size-5"></span>
                         </a>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+                <div class="text-base-content text-center text-base">
+                    &copy;2024
+                    <a href="" class="text-primary">FlyonUI</a>
+                    ,
+                    <br class="md:hidden" />
+                    Made With ❤ for a better web.
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 
