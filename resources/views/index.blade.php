@@ -10,13 +10,13 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-gray-900 text-justify">
+<body>
 
 
-    <div class="bg-gray-900 text-justify">
+    <div class="bg-gray-900/98 text-justify">
 
         {{-- Hero section --}}
-        <div class="bg-gray-900">
+        <div class="">
             <header class="absolute inset-x-0 top-0 z-50">
 
                 {{-- Navbar/Navigation --}}
@@ -95,7 +95,7 @@
                     <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
                         <div tabindex="0" class="fixed inset-0 focus:outline-none">
                             <el-dialog-panel
-                                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1">
+                                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto  p-6 sm:max-w-sm sm:ring-1">
                                 <div class="flex items-center justify-between">
                                     <a href="#" class="-m-1.5 p-1.5">
                                         <span class="sr-only">Your Company</span>
@@ -228,7 +228,7 @@
         </div>
 
         {{-- How it works --}}
-        <div class="overflow-hidden bg-white py-24 sm:py-32 dark:bg-gray-900">
+        <div class="overflow-hidden bg-gray-900 py-24 sm:py-32 dark:">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div
                     class="mx-auto grid max-w-2xl grid-cols-1 gap-x-40 gap-y-16 sm:gap-x-30  sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -302,7 +302,7 @@
         </div>
 
         {{-- statistik --}}
-        <div class="bg-gray-900 py-24 sm:py-32">
+        <div class=" py-24 sm:py-32">
             <div
                 class="mx-auto max-w-7xl px-6 lg:px-8 bg-gradient-to-r from-slate-900 via-blue-950 to-slate-900 rounded-2xl p-10">
                 <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
@@ -326,6 +326,8 @@
             </div>
         </div>
 
+
+
         {{-- Divisi --}}
         <div class="py-8 sm:py-16 lg:py-24 lg:px-8">
             <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
@@ -343,7 +345,91 @@
                 </p>
             </div>
             {{-- Team division --}}
-            <div
+            <!-- Icon Blocks -->
+            <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
+                    <!-- Icon Block -->
+                    <div class="text-center card  p-6 shadow-2xl ring-gray-950/5 bg-gray-900">
+                        <div 
+                            class="flex justify-center items-center size-12 bg-muted border border-line-2 rounded-full mx-auto">
+                            <svg class="shrink-0 size-5 text-muted-foreground-2" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="10" height="14" x="3" y="8" rx="2" />
+                                <path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4" />
+                                <path d="M8 18h.01" />
+                            </svg>
+                        </div>
+                        <div class="mt-3">
+                            <h3 class="text-lg font-semibold text-foreground">Responsive</h3>
+                            <p class="mt-1 text-muted-foreground-2">Responsive, and mobile-first project on the web</p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+
+                    <!-- Icon Block -->
+                    <div class="text-center">
+                        <div
+                            class="flex justify-center items-center size-12 bg-muted border border-line-2 rounded-full mx-auto">
+                            <svg class="shrink-0 size-5 text-muted-foreground-2" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M20 7h-9" />
+                                <path d="M14 17H5" />
+                                <circle cx="17" cy="17" r="3" />
+                                <circle cx="7" cy="7" r="3" />
+                            </svg>
+                        </div>
+                        <div class="mt-3">
+                            <h3 class="text-lg font-semibold text-foreground">Customizable</h3>
+                            <p class="mt-1 text-muted-foreground-2">Components are easily customized and extendable</p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+
+                    <!-- Icon Block -->
+                    <div class="text-center">
+                        <div
+                            class="flex justify-center items-center size-12 bg-muted border border-line-2 rounded-full mx-auto">
+                            <svg class="shrink-0 size-5 text-muted-foreground-2" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                            </svg>
+                        </div>
+                        <div class="mt-3">
+                            <h3 class="text-lg font-semibold text-foreground">Documentation</h3>
+                            <p class="mt-1 text-muted-foreground-2">Every component and plugin is well documented</p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+
+                    <!-- Icon Block -->
+                    <div class="text-center">
+                        <div
+                            class="flex justify-center items-center size-12 bg-muted border border-line-2 rounded-full mx-auto">
+                            <svg class="shrink-0 size-5 text-muted-foreground-2" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4c0-1.1.9-2 2-2h8a2 2 0 0 1 2 2v5Z" />
+                                <path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1" />
+                            </svg>
+                        </div>
+                        <div class="mt-3">
+                            <h3 class="text-lg font-semibold text-foreground">24/7 Support</h3>
+                            <p class="mt-1 text-muted-foreground-2">Contact us 24 hours a day, 7 days a week</p>
+                        </div>
+                    </div>
+                    <!-- End Icon Block -->
+                </div>
+            </div>
+            <!-- End Icon Blocks -->
+            {{-- <div
                 class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                 <div class="card glass text-white sm:max-w-sm">
                     <figure><img
@@ -361,7 +447,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
 
         {{-- Gallery --}}
