@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            // jika user tidak memilih role maka defaultnya adalah 'user'
+            $table->enum('role', ['bph', 'koor', 'demis', 'user'])->default('user');
             $table->rememberToken();
             $table->timestamps();
         });

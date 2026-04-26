@@ -4,6 +4,7 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Symfony\Component\HttpFoundation\Response;
 
 class User
@@ -15,6 +16,11 @@ class User
      */
     public function handle(Request $request, Closure $next): Response
     {
+        
+    
+        if (auth()->user()->role !== 'user') {
+            Redirect::to('/login')->send();
+        }
         return $next($request);
     }
 }

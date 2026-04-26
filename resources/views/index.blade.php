@@ -13,7 +13,7 @@
 <body>
 
 
-    <div class="bg-gray-900/98 text-justify">
+    <div class="bg-gray-900/83 text-justify">
 
         {{-- Hero section --}}
         <div class="">
@@ -81,6 +81,7 @@
                                 </ul>
                             </li>
                             <li><a href="#">Kabinet</a></li>
+                            <li><a href="#">AI Himsi</a></li>
                         </ul>
                     </div>
                     {{-- Login --}}
@@ -210,9 +211,7 @@
                             bermakna, kembangkan potensi diri, dan berikan dampak positif bagi masyarakat.</p>
                         <div class="mt-10 flex items-center justify-center gap-x-6">
                             <a href="#"
-                                class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Get
-                                started</a>
-
+                                class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Daftar</a>
                             <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span
                                     aria-hidden="true">→</span></a>
                         </div>
@@ -227,8 +226,9 @@
             </div>
         </div>
 
+
         {{-- How it works --}}
-        <div class="overflow-hidden bg-gray-900 py-24 sm:py-32 dark:">
+        <div class="overflow-hidden py-24 sm:py-32 dark:">
             <div class="mx-auto max-w-7xl px-6 lg:px-8">
                 <div
                     class="mx-auto grid max-w-2xl grid-cols-1 gap-x-40 gap-y-16 sm:gap-x-30  sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -327,7 +327,6 @@
         </div>
 
 
-
         {{-- Divisi --}}
         <div class="py-8 sm:py-16 lg:py-24 lg:px-8">
             <div class="mb-12 space-y-4 text-center sm:mb-16 lg:mb-24">
@@ -349,8 +348,8 @@
             <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 items-center gap-12">
                     <!-- Icon Block -->
-                    <div class="text-center card  p-6 shadow-2xl ring-gray-950/5 bg-gray-900">
-                        <div 
+                    <div class="text-center card  p-6 shadow-2xl ring-gray-950 bg-gray-900">
+                        <div
                             class="flex justify-center items-center size-12 bg-muted border border-line-2 rounded-full mx-auto">
                             <svg class="shrink-0 size-5 text-muted-foreground-2" xmlns="http://www.w3.org/2000/svg"
                                 width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -369,7 +368,7 @@
                     <!-- End Icon Block -->
 
                     <!-- Icon Block -->
-                    <div class="text-center">
+                    <div class="text-center card  p-6 shadow-2xl ring-gray-950/5 bg-gray-900">
                         <div
                             class="flex justify-center items-center size-12 bg-muted border border-line-2 rounded-full mx-auto">
                             <svg class="shrink-0 size-5 text-muted-foreground-2" xmlns="http://www.w3.org/2000/svg"
@@ -390,7 +389,7 @@
                     <!-- End Icon Block -->
 
                     <!-- Icon Block -->
-                    <div class="text-center">
+                    <div class="text-center card  p-6 shadow-2xl ring-gray-950/5 bg-gray-900">
                         <div
                             class="flex justify-center items-center size-12 bg-muted border border-line-2 rounded-full mx-auto">
                             <svg class="shrink-0 size-5 text-muted-foreground-2" xmlns="http://www.w3.org/2000/svg"
@@ -409,7 +408,7 @@
                     <!-- End Icon Block -->
 
                     <!-- Icon Block -->
-                    <div class="text-center">
+                    <div class="text-center card  p-6 shadow-2xl ring-gray-950/5 bg-gray-900">
                         <div
                             class="flex justify-center items-center size-12 bg-muted border border-line-2 rounded-full mx-auto">
                             <svg class="shrink-0 size-5 text-muted-foreground-2" xmlns="http://www.w3.org/2000/svg"
